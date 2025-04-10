@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔧 Plataformas de Control de Versiones</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #6e48aa, #9d50bb);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem;
+        }
+        /* Cards de plataformas */
+        .platforms {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .platform-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 1.5rem;
+            transition: transform 0.3s;
+        }
+        .platform-card:hover {
+            transform: translateY(-10px);
+        }
+        .platform-card h2 {
+            color: #6e48aa;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        .github { border-top: 4px solid #6e48aa; }
+        .gitlab { border-top: 4px solid #fc6d26; }
+        .bitbucket { border-top: 4px solid #2684ff; }
+        /* Colores específicos */
+        .github h2 { color: #6e48aa; }
+        .gitlab h2 { color: #fc6d26; }
+        .bitbucket h2 { color: #2684ff; }
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #333;
+            color: white;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .platforms {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>🔧 Plataformas de Control de Versiones</h1>
+        <p>Comparativa básica de GitHub, GitLab y Bitbucket</p>
+    </div>
+</header>
+
+<div class="container">
+    <div class="platforms">
+        <!-- GitHub -->
+        <div class="platform-card github">
+            <h2>GitHub 🐙</h2>
+            <p><strong>Propietario:</strong> Microsoft</p>
+            <p><strong>Ventajas:</strong></p>
+            <ul>
+                <li>Comunidad más grande 👥</li>
+                <li>Integración con CI/CD (GitHub Actions) ⚙️</li>
+                <li>GitHub Pages para hosting gratuito 🚀</li>
+            </ul>
+            <p><strong>Desventajas:</strong></p>
+            <ul>
+                <li>Repositorios privados gratuitos con limitaciones 🛑</li>
+            </ul>
+            <p><a href="https://github.com" target="_blank">Visitar GitHub</a></p>
+        </div>
+
+        <!-- GitLab -->
+        <div class="platform-card gitlab">
+            <h2>GitLab 🦊</h2>
+            <p><strong>Propietario:</strong> GitLab Inc.</p>
+            <p><strong>Ventajas:</strong></p>
+            <ul>
+                <li>CI/CD integrado (GitLab CI) desde el plan gratuito 🔄</li>
+                <li>Autohosteable (versión Community Edition) 🏠</li>
+                <li>Herramientas DevOps completas 🛠️</li>
+            </ul>
+            <p><strong>Desventajas:</strong></p>
+            <ul>
+                <li>Interfaz menos intuitiva para principiantes 🤔</li>
+            </ul>
+            <p><a href="https://gitlab.com" target="_blank">Visitar GitLab</a></p>
+        </div>
+
+        <!-- Bitbucket -->
+        <div class="platform-card bitbucket">
+            <h2>Bitbucket 🪣</h2>
+            <p><strong>Propietario:</strong> Atlassian</p>
+            <p><strong>Ventajas:</strong></p>
+            <ul>
+                <li>Integración nativa con Jira y Trello 🧩</li>
+                <li>Repositorios privados gratuitos (hasta 5 usuarios) 🆓</li>
+                <li>Soporte para Mercurial (además de Git) 🔄</li>
+            </ul>
+            <p><strong>Desventajas:</strong></p>
+            <ul>
+                <li>Menos popular que GitHub/GitLab 📉</li>
+            </ul>
+            <p><a href="https://bitbucket.org" target="_blank">Visitar Bitbucket</a></p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>© 2024 - Mi Proyecto de Aprendizaje Git | Hecho con ❤️ y ☕</p>
+    </div>
+</footer>
+</body>
+</html>
